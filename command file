@@ -173,4 +173,71 @@ To github.com:tyagishubh-collab/Game.git
  * [new branch]      master -> master
 branch 'master' set up to track 'origin/master'.
 
+C:\Users\PSIT\game>git push
+Everything up-to-date
+
+C:\Users\PSIT\game>git fetch
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 3.48 KiB | 254.00 KiB/s, done.
+From github.com:tyagishubh-collab/Game
+   b80e1d8..624f52f  master     -> origin/master
+ * [new branch]      tyagishubh-collab-patch-1 -> origin/tyagishubh-collab-patch-1
+
+C:\Users\PSIT\game>git pull
+Updating b80e1d8..624f52f
+Fast-forward
+ name1 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 name1
+
+C:\Users\PSIT\game>git branch
+* master
+
+C:\Users\PSIT\game>git branch newbranch
+
+C:\Users\PSIT\game>git branch
+* master
+  newbranch
+
+C:\Users\PSIT\game>git checkout newbranch
+Switched to branch 'newbranch'
+
+C:\Users\PSIT\game>git diff
+
+C:\Users\PSIT\game>git diff
+
+C:\Users\PSIT\game>git status
+On branch newbranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file3.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\PSIT\game>git add file3.txt.txt
+
+C:\Users\PSIT\game>git status
+On branch newbranch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file3.txt.txt
+
+
+C:\Users\PSIT\game>git diff
+diff --git a/file3.txt.txt b/file3.txt.txt
+index c007f2e..d85786e 100644
+--- a/file3.txt.txt
++++ b/file3.txt.txt
+@@ -1 +1,2 @@
+-this is a random file
+\ No newline at end of file
++this is a random file
++this is a change
+\ No newline at end of file
+
+C:\Users\PSIT\game> git tag
+
 C:\Users\PSIT\game>
