@@ -1,0 +1,176 @@
+Microsoft Windows [Version 10.0.19045.5247]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\PSIT>git config --global user.email"tyagishubh05@gmail.com"
+
+C:\Users\PSIT>git config --global user.name "shubhinloop"
+
+C:\Users\PSIT> git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Users/PSIT/AppData/Local/Programs/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=shubhinloop
+
+C:\Users\PSIT>cd
+C:\Users\PSIT
+
+C:\Users\PSIT>cd NetHood
+
+C:\Users\PSIT\NetHood> cd..
+
+C:\Users\PSIT>cat C:\Users\PSIT\.ssh\id_ed25519.pub
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\PSIT>code C:\Users\PSIT\.ssh\id_ed25519.pub
+'code' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\PSIT>notepad C:\Users\PSIT\.ssh\id_ed25519.pub
+
+C:\Users\PSIT>pwd
+'pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\PSIT>mkdir
+The syntax of the command is incorrect.
+
+C:\Users\PSIT>mkdir game1
+
+C:\Users\PSIT>mkdir game
+
+C:\Users\PSIT>cd game
+
+C:\Users\PSIT\game>] git init
+']' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\PSIT\game>git init
+Initialized empty Git repository in C:/Users/PSIT/game/.git/
+
+C:\Users\PSIT\game>ls -F
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\PSIT\game>LS -F
+'LS' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\PSIT\game>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\PSIT\game>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\PSIT\game>git add .
+
+C:\Users\PSIT\game>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File.txt.txt
+
+
+C:\Users\PSIT\game>git commit -m "I added a file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'PSIT@N31-37.(none)')
+
+C:\Users\PSIT\game> git commit -m "I added a file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'PSIT@N31-37.(none)')
+
+C:\Users\PSIT\game>git config --global user.email "tyagishubh05@gmail.com"
+
+C:\Users\PSIT\game>git config --global user.name "shubhinloop"
+
+C:\Users\PSIT\game>git commit -m "i added a file"
+[master (root-commit) b80e1d8] i added a file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 File.txt.txt
+
+C:\Users\PSIT\game>git log
+commit b80e1d89e6d56ad07d1f2fbe240ff86364ba6413 (HEAD -> master)
+Author: shubhinloop <tyagishubh05@gmail.com>
+Date:   Sat Dec 21 14:01:22 2024 +0530
+
+    i added a file
+
+C:\Users\PSIT\game>git log --oneline
+b80e1d8 (HEAD -> master) i added a file
+
+C:\Users\PSIT\game>git log --oneline --graph
+* b80e1d8 (HEAD -> master) i added a file
+
+C:\Users\PSIT\game>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\PSIT\game>git remote add origin git@github.com:tyagishubh-collab/Game.git
+
+C:\Users\PSIT\game>git push --set-upstream origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:tyagishubh-collab/Game.git'
+
+C:\Users\PSIT\game>git push --set-upstream origin master
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 238 bytes | 238.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:tyagishubh-collab/Game.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\PSIT\game>
